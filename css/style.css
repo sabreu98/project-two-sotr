@@ -1,58 +1,63 @@
-/* Enter your Styles below! */
+body {
 
-body { 
-	font-family: Helvetica, sans-serif;
-	font-size: 16px;
-	 }
 
-h1, h2, h3, h4 {
-	font-family: Helvetica, sans-serif;
 }
-
-h1 {
-	font-size: 48px;
-}
-
-h2 {
-	font-size: 36px;
-}
-
-h3 {
-	font-size: 28px;
-}
-h4 {
-	font-size: 24px;
-}
-
-blockquote {
-	margin: 20px 60px;
-	font-family: Helvetica, sans-serif;
-}
-
-header {margin-bottom: 20px;}
-
-/* ensures that your images stretch the width of their containers */
-img { width: 100%; }
-
-a { 
-	color: red;
-	text-decoration: none;
-	 }
-a:hover { color: black; }
-
-.grid {
+.content {
+	position: relative;
+	grid-template-columns: 1fr 3fr 1fr;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 40px;
-	width: 60%;
-	margin: auto;
+}
+.backgroundImages {
+	grid-template-columns:50% 50%;
+	display: grid;
+	overflow: hidden;
+	margin-top: -60px;
+
 }
 
-.grid div {
-	background-color: #ccc;
-	padding: 20px;
+.borderTop {
+	background-color: white;
+	position: fixed;
+	margin: 5%;
+	left: 0;
+	right: 0;
+	text-align: top;
+	top: 5%;
+	grid-template-columns: 3fr 1fr 1fr 1fr;
+	display: grid;
 }
 
+.h2home {
+	text-decoration: none;
+	font-size: 12px;
+	text-align: center;
+	margin: 10px;
+}
+
+.h1home {
+	text-decoration: none;
+	font-size: 12px;
+	margin: 10px;
+}
+
+.borderRight {
+	background-color: white;
+	position:fixed;
+	margin: 5%;
+	left: 0px;
+	right: 0px;
+	top: 5%;
+	grid-template-columns: 1fr 1fr 1fr;
+	display: grid;
+	transform: rotate(90deg);
+}
+
+.h3home {
+	text-decoration: none;
+	font-size: 12px;
+	text-align: center;
+	margin: 10px;
+}
 @media only screen and (min-width:768px) {
 
 }
