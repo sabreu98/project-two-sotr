@@ -1,52 +1,112 @@
+@font-face {
+    font-family: 'GT Pressura';
+    src: url('../gtpressura/GTPressura-Bold.woff2') format('woff2'),
+        url('../gtpressura/GTPressura-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
 .contentBorder{
 	position: fixed;
 	top: 0;
   left: 0;
   right: 0;
-  height: 100vh;
-  width: 90%;
-  margin: auto;
+  width: 96%;
+  margin: 2%;
   display: grid;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-columns: 5% 90% 5%;
+	grid-template-rows: 5% 90% 5%;
 }
 .topBorder, .bottomBorder, .leftBorder, .rightBorder{
-	border: 5px solid red;
 	background-color: white;
 }
 .topBorder {
 	grid-column: 1/4;
   grid-row: 1/2;
 	display:grid;
-	grid-template-columns: 2fr 1fr 1fr 1fr;
+	grid-template-columns:	1fr 4fr 1fr 1fr 1fr;
+	padding: 0px;
+}
+.topLogo{
+	padding: -6px;
+}
+.topH1{
+	font-family: 'GT Pressura';
+	font-weight: bold;
+  font-style: normal;
+	padding-top: 0%;
+}
+.topH2 {
+	margin-left: 25%;
+	padding: 7%;
+	text-align: center;
 }
 
+.middleLogo {
+	margin-top: 10%;
+	margin-left: 35%;
+}
 
 .middleBorder {
-	height:75vh;
+	height:85vh;
+
 }
+
+.leftBorder {
+	grid-column:1/2;
+	grid-template-rows: 1fr 1fr 1fr;
+	display:grid;
+}
+
+.leftH2{
+	justify-content: center;
+	transform: rotate(-90deg);
+	transform-origin: 50% 70%;
+	grid-row:2/3;
+	white-space: nowrap;
+}
+
 .rightBorder{
 	grid-column:3/4;
 	grid-template-rows: 1fr 1fr 1fr;
 	display:grid;
-
 }
 .rightH2{
+	text-align: center;
 	transform: rotate(90deg);
   white-space: nowrap;
-	transform-origin: left;
-
+	transform-origin: 5% 15%;
 }
 
-.leftH2{
-	transform: rotate(-90deg);
-	white-space: nowrap;
-	transform-origin: right;
 
-}
-
-.leftBorder{
-}
 .bottomBorder{
 	grid-column: 1/4;
 	grid-row: 3/4;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.bottomH2, .bottomH3 {
+	padding-top: 8px;
+}
+.bottomH2 {
+	text-align: center;
+	grid-column: 1/2;
+}
+
+.bottomH3 {
+	text-align: center;
+	grid-column: 2/3;
+}
+
+.backgroundImages{
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns:50% 50%;
+	overflow: hidden;
+}
+
+.backgroundImages2 {
+	margin-top: -50px;
 }
