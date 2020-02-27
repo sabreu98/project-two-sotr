@@ -14,7 +14,7 @@
   width: 96%;
   margin: 2%;
   display: grid;
-  grid-template-columns: 5% 90% 5%;
+  grid-template-columns: 3% 94% 3%;
 	grid-template-rows: 5% 90% 5%;
 }
 .topBorder, .bottomBorder, .leftBorder, .rightBorder{
@@ -25,21 +25,28 @@
   grid-row: 1/2;
 	display:grid;
 	grid-template-columns:	1fr 4fr 1fr 1fr 1fr;
-	padding: 0px;
 }
 .topLogo{
-	padding: -6px;
+	margin:0;
+	padding-left: 0px;
 }
 .topH1{
+	margin:auto;
+	margin-left: -18%;
+	text-align: left;
 	font-family: 'GT Pressura';
 	font-weight: bold;
   font-style: normal;
-	padding-top: 0%;
+	font-size: 30px;
 }
 .topH2 {
-	margin-left: 25%;
-	padding: 7%;
-	text-align: center;
+	margin:auto;
+	margin-left: -5px;
+	text-align: right;
+	font-family: 'GT Pressura';
+	font-weight: bold;
+  font-style: normal;
+	font-size: 25px;
 }
 
 .middleLogo {
@@ -53,17 +60,19 @@
 }
 
 .leftBorder {
-	grid-column:1/2;
-	grid-template-rows: 1fr 1fr 1fr;
-	display:grid;
+
 }
 
 .leftH2{
-	justify-content: center;
+
+	margin-top: 1000%;
 	transform: rotate(-90deg);
-	transform-origin: 50% 70%;
-	grid-row:2/3;
 	white-space: nowrap;
+
+	font-family: 'GT Pressura';
+	font-weight: bold;
+	font-size: 25px;
+
 }
 
 .rightBorder{
@@ -75,7 +84,12 @@
 	text-align: center;
 	transform: rotate(90deg);
   white-space: nowrap;
-	transform-origin: 5% 15%;
+	transform-origin: 7% 7%;
+
+	font-family: 'GT Pressura';
+	font-weight: bold;
+	font-style: normal;
+	font-size: 25px;
 }
 
 
