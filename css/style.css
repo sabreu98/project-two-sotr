@@ -222,7 +222,6 @@ a.rightH3:hover{
   display: grid;
   grid-template-columns:55% 45%;
   overflow: hidden;
-  column
 }
 #au-Box {
   grid-column: 2/3;
@@ -238,11 +237,10 @@ a.rightH3:hover{
 
 .au-content{
   margin-top:8%;
-  margin-left: 35px;
-  margin-right:64%;
-
+  margin-left: 45px;
+  margin-right:62%;
   font-family: 'GT Pressura';
-  color:black;
+  color:white;
 }
 
 #au-h1 {
@@ -255,22 +253,56 @@ a.rightH3:hover{
   margin-right:25px;
   font-style:normal;
   font-size:18px;
-  line-height:20px;
+  line-height:22px;
 
 }
 .backgroundImages-3{
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns:50% 50%;
-  overflow: hidden;
+  grid-template-columns:55% 45%;
 }
 #ju-Box {
   grid-column: 2/3;
   width:100vw;
-  height:100vh;
+  height:100%;
   background:rgb(240,82,74);
 }
-.pg3Image {
-  
+.ju-content{
+  margin-top:15%;
+  margin-left: 60px;
+  margin-right:65%;
+
+  text-align: center;
+  font-family: 'GT Pressura';
+  color:white;
+}
+#ju-p1{
+  line-height:22px;
+  font-size:18px;
+  font-style:normal;
+}
+
+#ju-h1{
+  line-height:50px;
+  font-size: 50px;
+  font-style: normal;
+}
+
+#ju-h2 {
+  line-height:50px;
+  font-size: 30px;
+  font-style: normal;
+}
+
+.pg3Image{
+  overflow: hidden;
+}
+
+.ju-content-2{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns:55% 45%;
+
 }
